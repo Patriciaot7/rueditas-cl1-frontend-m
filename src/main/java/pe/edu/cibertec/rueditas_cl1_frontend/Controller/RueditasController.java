@@ -41,7 +41,7 @@ public class RueditasController {
             return "inicio";
         }
         try {
-            String endpoint = "http://localhost:8081/rueditas/search";
+            String endpoint = "http://localhost:8081/rueda/busqueda";
 
             RueditasResponseDTO responseDTO = restTemplate.postForObject(endpoint, requestDTO, RueditasResponseDTO.class);
 
